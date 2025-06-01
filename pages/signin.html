@@ -20,11 +20,14 @@
     <div class="absolute inset-0 bg-black bg-opacity-50"></div>
     <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-6 py-10">
       <h2 class="text-4xl font-bold text-yellow-400 mb-6">Sign In</h2>
-      <form class="w-full max-w-md bg-white p-8 rounded-lg shadow-lg">
-        <input type="text" placeholder="Email" class="w-full p-4 mb-4 border border-gray-300 rounded-lg shadow-md" required />
-        <input type="password" placeholder="Password" class="w-full p-4 mb-4 border border-gray-300 rounded-lg shadow-md" required />
+      <form id="signin-form" class="w-full max-w-md bg-white p-8 rounded-lg shadow-lg text-black">
+        <input id="username" type="text" placeholder="Username" class="w-full p-4 mb-4 border border-gray-300 rounded-lg shadow-md" required />
+        <input id="password" type="password" placeholder="Password" class="w-full p-4 mb-4 border border-gray-300 rounded-lg shadow-md" required />
         <button type="submit" class="bg-blue-500 w-full p-4 text-white rounded-lg hover:bg-blue-600">Sign In</button>
       </form>
+      <button onclick="location.href='/index.html'" class="mt-4 text-yellow-300 hover:underline">
+        &larr; Back to Home
+      </button>
     </div>
   </section>
 
@@ -33,5 +36,22 @@
     <p class="text-sm">&copy; 2025 FoodRush. All rights reserved.</p>
   </footer>
 
+  <!-- Sign-In Script -->
+  <script>
+    document.getElementById('signin-form').addEventListener('submit', function(e) {
+      e.preventDefault(); // Prevent form from refreshing the page
+
+      const username = document.getElementById('username').value.trim();
+      const password = document.getElementById('password').value.trim();
+
+      if (username === 'admin' && password === 'ezekiel') {
+        alert('Login successful!');
+        // Redirect to dashboard or home page after login
+        window.location.href = './menu.html';
+      } else {
+        alert('Invalid username or password.');
+      }
+    });
+  </script>
 </body>
 </html>
