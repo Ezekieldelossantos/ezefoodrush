@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sign In - FoodRush</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="/css/global.css">
   <style>
     .bg-custom-signin {
       background-image: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092');
@@ -13,6 +15,7 @@
     }
   </style>
 </head>
+
 <body class="text-white font-sans">
 
   <!-- Sign-In Section -->
@@ -21,8 +24,10 @@
     <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-6 py-10">
       <h2 class="text-4xl font-bold text-yellow-400 mb-6">Sign In</h2>
       <form id="signin-form" class="w-full max-w-md bg-white p-8 rounded-lg shadow-lg text-black">
-        <input id="username" type="text" placeholder="Username" class="w-full p-4 mb-4 border border-gray-300 rounded-lg shadow-md" required />
-        <input id="password" type="password" placeholder="Password" class="w-full p-4 mb-4 border border-gray-300 rounded-lg shadow-md" required />
+        <input id="username" type="text" placeholder="Username"
+          class="w-full p-4 mb-4 border border-gray-300 rounded-lg shadow-md" required />
+        <input id="password" type="password" placeholder="Password"
+          class="w-full p-4 mb-4 border border-gray-300 rounded-lg shadow-md" required />
         <button type="submit" class="bg-blue-500 w-full p-4 text-white rounded-lg hover:bg-blue-600">Sign In</button>
       </form>
       <button onclick="location.href='/index.html'" class="mt-4 text-yellow-300 hover:underline">
@@ -38,7 +43,7 @@
 
   <!-- Sign-In Script -->
   <script>
-    document.getElementById('signin-form').addEventListener('submit', function(e) {
+    document.getElementById('signin-form').addEventListener('submit', function (e) {
       e.preventDefault(); // Prevent form from refreshing the page
 
       const username = document.getElementById('username').value.trim();
@@ -53,5 +58,7 @@
       }
     });
   </script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </body>
+
 </html>
