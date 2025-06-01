@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menu - FoodRush</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .bg-custom-menu {
+      background-color: black;
+      background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1604908177526-472d64e5be92');
+      background-position: center;
+      background-size: cover;
+    }
+    .menu-item {
+      background-color: white;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.3s ease-in-out;
+    }
+    .menu-item:hover {
+      transform: translateY(-10px);
+    }
+    .btn-gold {
+      background-color: #D4AF37;
+      color: black;
+    }
+    .btn-gold:hover {
+      background-color: #C79E2B;
+      transition: all 0.3s ease-in-out;
+    }
+    .text-gold {
+      color: #D4AF37;
+    }
+    .shadow-gold {
+      box-shadow: 0 4px 8px rgba(212, 175, 55, 0.5);
+    }
+  </style>
+</head>
+<body class="font-sans text-white">
+
+  <!-- Menu Section -->
+  <section class="py-16 bg-custom-menu text-center fade-in">
+    <div class="mb-12">
+      <h2 class="text-5xl font-bold text-gold mb-4 drop-shadow-lg">Our Delicious Menu</h2>
+      <p class="text-lg text-white mb-8 drop-shadow-lg">Choose from our variety of mouthwatering dishes!</p>
+    </div>
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 px-6">
+      
+      <!-- Menu Items (1 to 10) -->
+      <!-- Menu Item 1 -->
+      <div class="menu-item shadow-gold">
+        <img src="https://images.unsplash.com/photo-1517248135467-d6c5b7d5e8bc" alt="Burger" class="w-full h-64 object-cover"/>
+        <div class="p-6 text-gray-800">
+          <h3 class="text-2xl font-bold">Classic Burger</h3>
+          <p class="text-gray-600 mb-4">Juicy beef patty with fresh lettuce and special sauce.</p>
+          <p class="text-xl text-gold font-bold mb-4">$12.99</p>
+          <a href="/pages/order.html" class="btn-gold px-6 py-2 rounded-full">Order Now</a>
+        </div>
+      </div>
+
+      <!-- Menu Item 2 -->
+      <div class="menu-item shadow-gold">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" alt="Pizza" class="w-full h-64 object-cover"/>
+        <div class="p-6 text-gray-800">
+          <h3 class="text-2xl font-bold">Deluxe Pizza</h3>
+          <p class="text-gray-600 mb-4">Tomato sauce, mozzarella, pepperoni, olives, and basil.</p>
+          <p class="text-xl text-gold font-bold mb-4">$14.99</p>
+          <a href="/pages/order.html" class="btn-gold px-6 py-2 rounded-full">Order Now</a>
+        </div>
+      </div>
+
+      <!-- Menu Item 3 -->
+      <div class="menu-item shadow-gold">
+        <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90" alt="Pasta" class="w-full h-64 object-cover"/>
+        <div class="p-6 text-gray-800">
+          <h3 class="text-2xl font-bold">Creamy Pasta</h3>
+          <p class="text-gray-600 mb-4">A rich, creamy sauce with fresh herbs and parmesan.</p>
+          <p class="text-xl text-gold font-bold mb-4">$13.99</p>
+          <a href="/pages/order.html" class="btn-gold px-6 py-2 rounded-full">Order Now</a>
+        </div>
+      </div>
+
+      <!-- Menu Item 4 -->
+      <div class="menu-item shadow-gold">
+        <img src="https://images.unsplash.com/photo-1603079855795-69f6c72f9a57" alt="Salad" class="w-full h-64 object-cover"/>
+        <div class="p-6 text-gray-800">
+          <h3 class="text-2xl font-bold">Caesar Salad</h3>
+          <p class="text-gray-600 mb-4">Crisp romaine lettuce, creamy Caesar dressing, parmesan.</p>
+          <p class="text-xl text-gold font-bold mb-4">$9.99</p>
+          <a href="/pages/order.html" class="btn-gold px-6 py-2 rounded-full">Order Now</a>
+        </div>
+      </div>
+
+      <!-- Menu Item 5 -->
+      <div class="menu-item shadow-gold">
+        <img src="https://images.unsplash.com/photo-1553621042-f6e147245754" alt="Sushi" class="w-full h-64 object-cover"/>
+        <div class="p-6 text-gray-800">
+          <h3 class="text-2xl font-bold">Sushi Platter</h3>
+          <p class="text-gray-600 mb-4">Fresh fish, seaweed, and rice rolled to perfection.</p>
+          <p class="text-xl text-gold font-bold mb-4">$19.99</p>
+          <a href="/pages/order.html" class="btn-gold px-6 py-2 rounded-full">Order Now</a>
+        </div>
+      </div>
+
+      <!-- Menu Item 6 -->
+      <div class="menu-item shadow-gold">
+        <img src="https://images.unsplash.com/photo-1612874742393-d0268a7e2e8a" alt="Tacos" class="w-full h-64 object-cover"/>
+        <div class="p-6 text-gray-800">
+          <h3 class="text-2xl font-bold">Spicy Tacos</h3>
+          <p class="text-gray-600 mb-4">Beef, lettuce, cheese, and salsa in soft tortillas.</p>
+          <p class="text-xl text-gold font-bold mb-4">$11.99</p>
+          <a href="/pages/order.html" class="btn-gold px-6 py-2 rounded-full">Order Now</a>
+        </div>
+      </div>
+
+      <!-- Menu Item 7 -->
+      <div class="menu-item shadow-gold">
+        <img src="https://images.unsplash.com/photo-1605478521073-beb5c6161cb2" alt="Steak" class="w-full h-64 object-cover"/>
+        <div class="p-6 text-gray-800">
+          <h3 class="text-2xl font-bold">Grilled Steak</h3>
+          <p class="text-gray-600 mb-4">Tender beef steak with garlic butter and herbs.</p>
+          <p class="text-xl text-gold font-bold mb-4">$26.99</p>
+          <a href="/pages/order.html" class="btn-gold px-6 py-2 rounded-full">Order Now</a>
+        </div>
+      </div>
+
+      <!-- Menu Item 8 -->
+      <div class="menu-item shadow-gold">
+        <img src="https://images.unsplash.com/photo-1585238341982-6fc937f4b1a7" alt="Salmon" class="w-full h-64 object-cover"/>
+        <div class="p-6 text-gray-800">
+          <h3 class="text-2xl font-bold">Grilled Salmon</h3>
+          <p class="text-gray-600 mb-4">Lemon butter salmon with asparagus and rice.</p>
+          <p class="text-xl text-gold font-bold mb-4">$23.99</p>
+          <a href="/pages/order.html" class="btn-gold px-6 py-2 rounded-full">Order Now</a>
+        </div>
+      </div>
+
+      <!-- Menu Item 9 -->
+      <div class="menu-item shadow-gold">
+        <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b" alt="Pancakes" class="w-full h-64 object-cover"/>
+        <div class="p-6 text-gray-800">
+          <h3 class="text-2xl font-bold">Fluffy Pancakes</h3>
+          <p class="text-gray-600 mb-4">Golden pancakes with syrup and butter.</p>
+          <p class="text-xl text-gold font-bold mb-4">$8.99</p>
+          <a href="/pages/order.html" class="btn-gold px-6 py-2 rounded-full">Order Now</a>
+        </div>
+      </div>
+
+      <!-- Menu Item 10 -->
+      <div class="menu-item shadow-gold">
+        <img src="https://images.unsplash.com/photo-1607083206173-58b41d7e6000" alt="Sundae" class="w-full h-64 object-cover"/>
+        <div class="p-6 text-gray-800">
+          <h3 class="text-2xl font-bold">Chocolate Sundae</h3>
+          <p class="text-gray-600 mb-4">Ice cream, fudge sauce, and whipped cream.</p>
+          <p class="text-xl text-gold font-bold mb-4">$6.99</p>
+          <a href="/pages/order.html" class="btn-gold px-6 py-2 rounded-full">Order Now</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-center py-6 mt-10">
+    <p class="text-sm text-white">&copy; 2025 FoodRush. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
